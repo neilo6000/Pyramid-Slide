@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="pyramid.css">
+</head>
+<body >
+    <form id="details">
+        <label for="symbol">Brick Symbol: </label>
+        <select name="symbol" id="symbol">
+            <option value="#">#</option>
+            <option value="@">@</option>
+            <option value="X">X</option>
+            <option value="$">$</option>
+        </select>
+
+        <label for="height"> How high?</label>
+        <input type="range" name="height" id="height" min="1" max="20"  
+            data-show-value="true" oninput="determineHeightAndThenDrawPyramid()"/>
+        <label id="points"></label>
+    </form>
+
+    <div id="pyramid"></div> 
+
+    <script src="pyramid.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+#pyramid {
+    line-height: 0;
+    font-size: 30px;
+}
+
+#points {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#details {
+    border: 1px solid black;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: thin;
+    background-color: darkgrey;
+}
+
+body {
+    font-family: "Courier New", monospace;
+    text-align: center;
+}
+
