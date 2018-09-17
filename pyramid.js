@@ -42,7 +42,7 @@ function determineHeightAndThenDrawPyramid() {
          // build up a string for this row
         var rowStr = "";
          for (var i = 0; i < numSpaces; i++) {
-             var spaceCharacter = ".";
+             var spaceCharacter = "&nbsp";
              rowStr += spaceCharacter;
          }
 
@@ -55,7 +55,7 @@ function determineHeightAndThenDrawPyramid() {
 
         // create a <p> element with the text inside
         rowElem = document.createElement("p");
-        rowElem.appendChild(textElem);
+        rowElem.innerHTML = rowStr;
 
         // insert the paragraph as a child of the container <div>
         document.getElementById("pyramid").appendChild(rowElem);
